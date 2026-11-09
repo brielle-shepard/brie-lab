@@ -1,0 +1,13 @@
+node_modules/
+.next/
+azure-package/
+*.tsbuildinfo
+.env*
+!.env.example
+*.db
+*.sqlite*
+backups/
+imports/
+exports/
+*.log
+.DS_Store

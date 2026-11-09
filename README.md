@@ -16,6 +16,8 @@ This repository contains the Azure adaptation of the existing Sites application.
 
 Follow [the Azure setup guide](docs/azure-setup.md). Start with an owner-private staging deployment. Hosting and storage can incur Azure charges; review the portal estimate before creating resources.
 
+**Pending asset:** the portrait at `public/images/brielle-profile.jpg` is currently withheld from this public repository pending the owner’s approval to publish the image file here. The existing Sites version still has the photo. Tests and builds can run without it, but deployment packaging intentionally stops until the portrait is supplied. Resolve this choice before enabling deployment.
+
 The deployment workflow runs tests and builds on pushes. **Azure deployment is disabled until the repository variable `AZURE_DEPLOY_ENABLED` is set to `true`** and the other Azure variables and identity permissions are configured. No Azure credentials, blog entries, tenant IDs, or owner IDs belong in the repository.
 
 ## Development and verification
