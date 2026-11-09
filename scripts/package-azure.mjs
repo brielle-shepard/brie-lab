@@ -1,6 +1,6 @@
 import {access,cp,mkdir,rm} from "node:fs/promises";
 try {await access("public/images/brielle-profile.jpg");}
-catch {throw new Error("Portrait asset missing. Resolve the portrait publication choice before deploying; see README.md.");}
+catch {throw new Error("Required portrait asset missing: public/images/brielle-profile.jpg");}
 await rm("azure-package",{recursive:true,force:true});
 await mkdir("azure-package",{recursive:true});
 await cp(".next/standalone","azure-package",{recursive:true});
